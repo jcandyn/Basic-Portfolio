@@ -55,6 +55,7 @@
    right: -385px;
    bottom: 10px;
    
+   
 }
 #h1 {
     display: inline-block;
@@ -75,14 +76,16 @@ h1 {
    margin: 0 auto;
 }
 
-.img {
+#mainImg {
     float: left;
     margin-right: 25px;
 }
 
 hr {
-    line-height: 2px;
+    border: gray solid 1px;
     margin: 0 0 30px 0;
+    opacity: 0.75;
+ 
 }
 
 .header{
@@ -97,13 +100,15 @@ hr {
 
 .footer {
     background-color:grey;
-    display: inline-block;
-    position: absolute;
+    
+    position: fixed;
     bottom: 0;
     width: 100%;
-    border-top-width: 100px;
     border-top-color: #4aaaa5;
     left: 0;
+    border-top-style: solid;
+    text-align: center;
+    border-top-width: 8px;
 }
 
 
@@ -124,13 +129,6 @@ h2 {
     padding: 30px;
 }
 
-.footer {
-    border-top-color: #4aaaa5;
-    border-top-style: solid;
-    text-align: center;
-    border-top-width: 6px;
-}
-
 #copyright {
     position: relative;
     bottom: -10px;
@@ -147,58 +145,90 @@ h2 {
 }
 
 #AboutMe {
-    padding: 30px 0 10px 0;
+ 
+    display: inline-block;
+    position: relative;
+    font-size: 2em;
+    font-weight: 700;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
 }
 
 
 
-#hanging {
+.softball {
     display: inline-block;
-    position: relative;
-    left: 0px;
-    background-color: #4aaaa5
+    position: absolute;
+
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    text-align: center;
 }
 
-#baseball {
-    display: inline-block;
+
+#softball {
     position: relative;
-   left: 100px;
-   background-color: red;
-   margin: 0;
+    top: -80px;
+    line-height: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
 }
 
-#Trivia {
+
+.cooking {
     display: inline-block;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    bottom: 50px;
+}
+
+#cooking {
     position: relative;
-    left: 0px;
-   bottom: -250px;
-   background-color: purple;
+    top: -80px;
+    line-height: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: white;
+    background-color: #4aaaa5;
+}
+
+#talking{
+    position: relative;
+    top: -80px;
+    line-height: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: white;
+    background-color: #4aaaa5;
+}
+.talking {
+    display: inline-block;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    right: 500px;
 }
 
 #Widget {
     display: inline-block;
-    position: relative;
-    margin: 0;
-    left: 0px;
-    bottom: -500px;
+    position: absolute;
+    top: 400px;
+    left: 260px;
 }
 
 #Rock {
     display: inline-block;
-    position: relative;
-    bottom: -200px;
-    left: 0px;
-    background-color: black;
+    position: absolute;
+    top: 400px;
+    left: 20px;
+  
    
 }
 
-
-.BigContainer {
-    margin: 0 auto;
-    position: relative;
-    width: 960px;
-    top: 100px;
-}
 
 #Portfolio {
     display: inline-block;
@@ -212,10 +242,114 @@ h2 {
 
 .PortfolioMainSection {
     background-color: white;
-    position: relative;
-
-    margin: 0 auto;
     padding: 30px;
+    margin: 0 0 300px 0;
+    height: 850px;
+   
  
+}
+
+.BigContainer {
+    margin: 0 auto;
+    position: relative;
+    width: 960px;
+    top: 100px;
+    padding: 0;
+}
+
+#softball {
+    background-color: #4aaaa5;
+    color: white;
+    display: inline-block;
+    width: 200px;
+}
+
+
+.formContainer {
+    background-color: white;
+    margin: 0 auto;
+    position: relative;
+    width: 960px;
+    top: 100px;
+    padding: 0;
+}
+
+#contactForm {
+    display: inline-block;
+ position: relative;
+ font-size: 2em;
+ font-weight: 700;
+ margin-block-start: 0.67em;
+ margin-block-end: 0.67em;
+}
+
+.MainForm {
+    background-color: white;
+    padding: 30px;
+    margin: 0 0 300px 0;
+    
+}
+
+#yourMessage {
+    width: 100%;
+    height: 200px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: grey;
+    opacity: 0.5;
+    margin: 5px 0 10px 0;
+ 
+}
+
+#yourName {
+    display: block;
+    height: 20px;
+    width: 100%;
+    margin: 5px 0 0px 0;
+    border-style: solid;
+    border-width: 1px;
+    border-color: grey;
+    opacity: 0.5;
+}
+
+#yourEmail {
+    height: 20px;
+    width: 100%;
+    margin: 5px 0 10px 0;
+    border-style: solid;
+    border-width: 1px;
+    border-color: grey;
+    opacity: 0.5;
+    
+}
+
+a:hover { color: #4aaaa5; }
+.overlay:hover {
+    display: block;
+  }
+input:focus { 
+    outline: none !important;
+    border-color: #4aaaa5;
+    box-shadow: 0 0 10px #4aaaa5;
+}
+
+#yourMessage:focus {
+    outline: none !important;
+    border-color: #4aaaa5;
+    box-shadow: 0 0 10px#4aaaa5;
+}
+
+#submit {
+    color: white;
+    background-color: #4aaaa5;
+    height: 40px;
+    width: 100px;
+    line-height: 10px;
+    font-size: 20px;
+}
+
+label {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
 }
 
