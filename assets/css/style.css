@@ -13,18 +13,19 @@
     position: relative;
  padding-left: 15px;
  margin-left: 15px;
- font-family: Georgia, 'Times New Roman', Times, serif;
+ font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
  text-decoration: none;
  color: #777777;
  line-height: 18px; 
  display: inline-block;
+ 
 }
 
 .contact {
     position: relative;
     padding-left: 15px;
     margin-left: 15px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     text-decoration: none;
     color: #777777;
     line-height: 18px;
@@ -38,7 +39,7 @@
     position: relative;
     padding-left: 15px;
     margin-left: 15px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     text-decoration: none;
     color: #777777;
     line-height: 18px;
@@ -73,7 +74,7 @@ h1 {
     background: #ffffff;
    position: relative;
    top: 100px;
-   margin: 0 auto;
+   margin: 0 auto 200px auto;
 }
 
 #mainImg {
@@ -213,22 +214,54 @@ h2 {
     right: 500px;
 }
 
-#Widget {
+.Widget {
     display: inline-block;
     position: absolute;
     top: 400px;
     left: 260px;
+} 
+   
+
+#widget {
+    position: relative;
+    line-height: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: white;
+    background-color: #4aaaa5;
+    bottom: 80px;
+
 }
 
-#Rock {
+#rock {
+    position: relative;
+    line-height: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: white;
+    background-color: #4aaaa5;
+    bottom: 80px;
+
+}
+
+.Rock {
     display: inline-block;
     position: absolute;
+    width: 200px;
+    height: 200px;
+    text-align: center;
     top: 400px;
-    left: 20px;
-  
-   
+    left: 30px;
 }
-
+.Widget{
+    display: inline-block;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    top: 400px;
+    left: 260px;
+}
 
 #Portfolio {
     display: inline-block;
@@ -240,21 +273,15 @@ h2 {
 
 }
 
-.PortfolioMainSection {
-    background-color: white;
-    padding: 30px;
-    margin: 0 0 300px 0;
-    height: 850px;
-   
- 
-}
-
 .BigContainer {
     margin: 0 auto;
     position: relative;
-    width: 960px;
+    width: 900px;
     top: 100px;
-    padding: 0;
+    padding: 30px;
+    background-color: white;
+    height: 850px;
+    margin-bottom: 200px;
 }
 
 #softball {
@@ -353,3 +380,20 @@ label {
     font-size: 20px;
 }
 
+.picture {
+    width: 200px;
+    height: 200px;
+}
+
+p {
+    line-height: 2;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+label {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+input {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
